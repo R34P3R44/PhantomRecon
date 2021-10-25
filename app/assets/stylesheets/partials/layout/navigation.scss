@@ -10,7 +10,10 @@ nav {
     .navbar-header {
         width: 100%;
         button, .navbar-brand {
-            transition: opacity 0.15;
+            transition: opacity 0.50;
+            color: black;
+            font-size: medium;
+            font-family: Orbitron;
         }
         button {
             margin-right: 0;
@@ -19,4 +22,8 @@ nav {
             opacity: 0.8;
         }
     }
+}
+
+body {
+    margin-top: 50px;
 }
