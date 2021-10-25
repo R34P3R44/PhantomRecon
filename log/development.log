@@ -1031,3 +1031,61 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 7429)
 
 
+Started GET "/" for ::1 at 2021-10-25 22:47:29 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.7ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 127.0ms | Allocations: 74230)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms | Allocations: 82742)
+
+
+  
+ActionView::Template::Error (undefined method `lint_to' for #<#<Class:0x00007faa84b80f20>:0x00007faa853775d0>
+Did you mean?  link_to):
+     8:         <span class="icon-bar"></span>
+     9:         <span class="icon-bar"></span>
+    10:       </button>
+    11:       <%= lint_to 'PhantomRecon', root_path, class: 'navbar-brand'%>
+    12:     </div>
+    13: 
+    14:     <!-- Collect the nav links, forms, and other content for toggling -->
+  
+app/views/layouts/_navigation.html.erb:11
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-10-25 22:47:40 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.3ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 162)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 8711)
+
+
+Started GET "/" for ::1 at 2021-10-25 22:47:42 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 42)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 7479)
+
+
+Started GET "/" for ::1 at 2021-10-25 23:06:56 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 7471)
+
+
+Started GET "/" for ::1 at 2021-10-25 23:21:41 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.0ms | Allocations: 8)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 42)
+Completed 200 OK in 487ms (Views: 486.3ms | ActiveRecord: 0.0ms | Allocations: 79352)
+
+
