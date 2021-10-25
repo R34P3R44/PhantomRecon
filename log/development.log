@@ -707,3 +707,27 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 59ms (Views: 44.5ms | ActiveRecord: 0.0ms | Allocations: 7486)
 
 
+Started GET "/" for ::1 at 2021-10-25 20:49:25 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 1.5ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 7788)
+
+
+Started GET "/" for ::1 at 2021-10-25 21:04:32 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.8ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 701ms (Views: 696.3ms | ActiveRecord: 0.0ms | Allocations: 98644)
+
+
+Started GET "/" for ::1 at 2021-10-25 21:04:35 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.1ms | Allocations: 9)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 7363)
+
+
