@@ -1287,3 +1287,12 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 451ms (Views: 450.2ms | ActiveRecord: 0.0ms | Allocations: 90653)
 
 
+Started GET "/" for ::1 at 2021-10-25 23:50:40 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.6ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 181)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.0ms | Allocations: 24588)
+
+
