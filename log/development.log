@@ -2877,3 +2877,178 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 54ms (Views: 33.3ms | ActiveRecord: 5.9ms | Allocations: 18921)
 
 
+Started GET "/" for ::1 at 2021-10-27 16:59:08 +0100
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 2.5ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.9ms | Allocations: 181)
+Completed 200 OK in 204ms (Views: 195.2ms | ActiveRecord: 0.0ms | Allocations: 20680)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-10-27 18:05:52 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.8ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 32.6ms | Allocations: 4699)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 36)
+Completed 200 OK in 117ms (Views: 60.6ms | ActiveRecord: 44.0ms | Allocations: 19160)
+
+
+Started GET "/" for ::1 at 2021-10-27 18:05:59 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.1ms | Allocations: 9)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 47)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 8150)
+
+
+Started GET "/user" for ::1 at 2021-10-27 18:06:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.10) lib/puma/configuration.rb:228:in `call'
+puma (4.3.10) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.10) lib/puma/server.rb:472:in `process_client'
+puma (4.3.10) lib/puma/server.rb:328:in `block in run'
+puma (4.3.10) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2021-10-27 18:06:36 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 361.3ms | Allocations: 183982)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 0.0ms | Allocations: 185863)
+
+
+  
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x00007fd63d432270>:0x00007fd63788bbb0>):
+    1: <%= bootstrap_form_for(resource, 
+    2:                        as: resource_name, 
+    3:                        url: session_path(resource_name)) do |f| %>
+    4: 
+  
+app/views/devise/sessions/new.html.erb:1
+Started GET "/" for ::1 at 2021-10-27 18:06:49 +0100
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 0.9ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 159)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 9474)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-10-27 18:07:12 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 196)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 502)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 36)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 11348)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-10-27 18:09:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 304.8ms | Allocations: 183745)
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 0.0ms | Allocations: 184386)
+
+
+  
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x00007fd63d432270>:0x00007fd634d57138>):
+    1: <%= bootstrap_form_for(resource, 
+    2:                        as: resource_name, 
+    3:                        url: session_path(resource_name)) do |f| %>
+    4: 
+  
+app/views/devise/sessions/new.html.erb:1
+Started GET "/users/sign_in" for ::1 at 2021-10-27 18:09:10 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 297.1ms | Allocations: 183737)
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.0ms | Allocations: 184374)
+
+
+  
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x00007fd63d432270>:0x00007fd63d267d78>):
+    1: <%= bootstrap_form_for(resource, 
+    2:                        as: resource_name, 
+    3:                        url: session_path(resource_name)) do |f| %>
+    4: 
+  
+app/views/devise/sessions/new.html.erb:1
+Started GET "/users/sign_up" for ::1 at 2021-10-27 18:11:27 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 512)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 4987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 160)
+Completed 200 OK in 745ms (Views: 726.5ms | ActiveRecord: 4.7ms | Allocations: 137587)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-10-27 18:12:02 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1040)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 32)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 9459)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-10-27 18:12:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 69.6ms | Allocations: 10436)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 37)
+Completed 200 OK in 86ms (Views: 82.4ms | ActiveRecord: 0.0ms | Allocations: 19743)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-10-27 18:12:19 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GUTe0myjx6q/B5xCBCMV8ylWuKKnE+mEX79jR91XS43zJBHu4FTJzYnWDooBljQF9TSjOFBVjx0R+AKod33n/Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"GUTe0myjx6q/B5xCBCMV8ylWuKKnE+mEX79jR91XS43zJBHu4FTJzYnWDooBljQF9TSjOFBVjx0R+AKod33n/Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1296)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 33)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 9785)
+
+
