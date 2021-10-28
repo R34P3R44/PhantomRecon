@@ -3052,3 +3052,13 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 9785)
 
 
+Started GET "/" for ::1 at 2021-10-27 20:33:38 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html within layouts/application
+  Rendered pages/index.html within layouts/application (Duration: 1.8ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 181)
+Completed 200 OK in 182ms (Views: 176.2ms | ActiveRecord: 0.0ms | Allocations: 23406)
+
+
