@@ -1,19 +1,12 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
-require 'capybara/polteirgeist'
+require 'capybara/poltergeist'
 require 'factory_girl_rails'
 require 'capybara/rspec'
 
 ENV['RAILS_ENV'] ||= 'test'
 
 require File.expand_path('../config/environment', __dir__)
-
-config.include Devise::Test::IntegrationHelpers, type: :feature
-config.include FactoryGirl::Syntax::Methods
-Capybara.Javascript_driver = :polteirgeist
-Capybara.server = :puma
-
-
 
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
@@ -47,6 +40,11 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+  config.include Devise::Test::IntegrationHelpers, type: :feature
+  config.include FactoryGirl::Syntax::Methods
+  Capybara.javascript_driver = :poltergeist
+  Capybara.server = :puma
+
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
@@ -60,17 +58,18 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
-  config.before(:each, js => true) do
+  config.before(:each, :js => true) do
     DatabaseCleaner.strategy = :truncation
   end
 
   config.before(:each) do
-    DatabaseCleaner.strat
+    DatabaseCleaner.start
   end
 
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
 
 
   # RSpec Rails can automatically mix in different behaviours to your tests
