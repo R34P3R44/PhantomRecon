@@ -2,19 +2,27 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Orbitron-Regular.ttf');
+ }
+
 html {
     font-size: 62.5%;
+    font-family: "Orbitron Regular";
 }
 
 body {
     background: &backgroundColor;
     font-size: 14px;
     font-size: 1.4rem;
+    font-family: "Orbitron Regular";
 }
 
 h1 {
     font-size: 24px;
     font-size: 2.4rem;
+    font-family: "Orbitron Regular";
 }
 
 i {

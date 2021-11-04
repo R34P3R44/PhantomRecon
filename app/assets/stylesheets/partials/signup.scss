@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Orbitron-Regular.ttf');
+ }
+
 #sig-up-form {
     margin-top:  100px;
+    font-family: "Orbitron Regular";
     h1 {
         font-size: 36px !important;
         font-size: 3.6rem !important;
+        font-family: "Orbitron Regular";
     }
     text-align: center;
     padding-bottom: 20px;
+    font-family: "Orbitron Regular";
 }
+

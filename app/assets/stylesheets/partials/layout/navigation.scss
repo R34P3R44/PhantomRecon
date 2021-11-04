@@ -1,19 +1,27 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('Orbitron-Regular.ttf');
+ }
+
 .navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
     background: $navbarColor !important;
     border: none;
+    font-style: "Orbitron Regular";
     a {
         color: write !important;
+        font-family: "Orbitron Regular";
     }
 }
 
 nav {
     .navbar-header {
+        font-family: "Orbitron Regular";
         width: 100%;
         button, .navbar-brand {
             transition: opacity 0.50;
             color: black;
             font-size: medium;
-            font-family: Orbitron;
+            font-family: "Orbitron Regular";
         }
         button {
             margin-right: 0;
@@ -29,10 +37,12 @@ nav {
 
 body {
     margin-top: 50px;
+    font-family: "Orbitron Regular";
 }
 
 .pc-menu {
     margin-right: 10px;
+    font-family: "Orbitron Regular";
 }
 .mobile-menu {
     i {
@@ -40,6 +50,7 @@ body {
     }
     ul {
         padding: 0px;
+        font-family: "Orbitron Regular";
     }
     a {
         display: block;
@@ -48,8 +59,10 @@ body {
     a:hover {
         background: white !important;
         color: black !important;
+        font-family: "Orbitron Regular";
         i {
             color: black;
+            font-family: "Orbitron Regular";
         }
     }
 }
@@ -61,14 +74,17 @@ body {
 .active a {
     background: $navbarColor !important;
     border-bottom: solid 5px white;
+    font-family: "Orbitron Regular";
 }
 
 .dropdown-toggle, .dropdown-menu {
     background: $navbarColor !important;
     border: none;
+    font-family: "Orbitron Regular";
 }
 
 .dropdown-menu a:hover {
     color: black !important;
     background: white !important;
+    font-family: "Orbitron Regular";
 }
