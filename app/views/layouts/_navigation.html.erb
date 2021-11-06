@@ -1,14 +1,20 @@
 <nav class="navbar navbar-default navbar-fixed-top">
+<!--<a class="navbar-brand" href="#"></a>-->
+  <%= link_to image_tag('phantomReconLogo.png'), root_path, :class => "image_container img"%>
+  <div class="inner_header">
+      <h1>PHANTOM RECON</h1>
+    </div>
+
   <div class="container">
-    <div class="row">
+    <!--<div class="row">-->
 
       <!-- Elements visible all the time -->
-      <div class="col-sm-7">
+      <!--<div class="col-sm-7">-->
         <%= render 'layouts/navigation/header' %>
       </div><!-- col-sm-7 -->
 
       <!-- Elements collapses on smaller devices -->
-      <div class="col-sm-5">
+      <!--<div class="col-sm-5">-->
         <%= render 'layouts/navigation/collapsible_elements' %>
       </div><!-- col-sm-5 -->
 

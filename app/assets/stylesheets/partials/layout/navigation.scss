@@ -6,7 +6,7 @@
 .navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
     background: $navbarColor !important;
     border: none;
-    font-style: "Orbitron Regular";
+    font-family:'Orbitron';
     a {
         color: write !important;
         font-family: "Orbitron Regular";
@@ -15,13 +15,13 @@
 
 nav {
     .navbar-header {
-        font-family: "Orbitron Regular";
         width: 100%;
+        height: 80px;
+
         button, .navbar-brand {
             transition: opacity 0.50;
-            color: black;
+            color: rgb(194, 0, 0);
             font-size: medium;
-            font-family: "Orbitron Regular";
         }
         button {
             margin-right: 0;
@@ -29,20 +29,16 @@ nav {
         button:hover, .navbar-brand:hover {
             opacity: 0.8;
         }
-    }
-    .col-sm-5, .col-sm-7 {
-        padding: 0;
+        
     }
 }
 
 body {
     margin-top: 50px;
-    font-family: "Orbitron Regular";
 }
 
 .pc-menu {
     margin-right: 10px;
-    font-family: "Orbitron Regular";
 }
 .mobile-menu {
     i {
@@ -50,19 +46,17 @@ body {
     }
     ul {
         padding: 0px;
-        font-family: "Orbitron Regular";
     }
     a {
-        display: block;
-        padding: 10px 0px 10px 25px !important;
+        display: none;
+        padding: 0px 60px s0px 0px !important;
+
     }
     a:hover {
         background: white !important;
         color: black !important;
-        font-family: "Orbitron Regular";
         i {
             color: black;
-            font-family: "Orbitron Regular";
         }
     }
 }
@@ -73,18 +67,52 @@ body {
 
 .active a {
     background: $navbarColor !important;
-    border-bottom: solid 5px white;
-    font-family: "Orbitron Regular";
+    border-bottom: solid 5px rgb(253, 253, 253);
 }
 
 .dropdown-toggle, .dropdown-menu {
     background: $navbarColor !important;
     border: none;
-    font-family: "Orbitron Regular";
+    padding: 0px 0px 0px 0px !important;
 }
 
 .dropdown-menu a:hover {
     color: black !important;
     background: white !important;
-    font-family: "Orbitron Regular";
+}
+
+.image_container img {
+    width: 100px;
+    height: 100px;
+    vertical-align: left;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.inner_header{
+    width: 900px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 175px
+}
+
+.navigation a {
+    float: left;
+    height: 100%;
+    display: table;
+    padding: 20px 30px;
+    padding-left: 20px;
+}
+  
+.navigation a li {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Orbitron';
+    font-size: 15px;
 }
