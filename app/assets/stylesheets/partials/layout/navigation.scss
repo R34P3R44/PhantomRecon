@@ -1,26 +1,26 @@
-@font-face {
-    font-family: 'Orbitron';
-    src: url('Orbitron-Regular.ttf');
- }
 
 .navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
     background: $navbarColor !important;
     border: none;
-    font-family:'Orbitron';
+    padding-right: 20px;
+    text-shadow: 1px 1px 1px red;
+    color: white;
+    font-family: 'Orbitron';
     a {
         color: write !important;
-        font-family: "Orbitron Regular";
+        font-family: 'Orbitron';
+        text-shadow: none;
     }
 }
 
 nav {
     .navbar-header {
         width: 100%;
-        height: 80px;
+        height: 70px;
 
         button, .navbar-brand {
             transition: opacity 0.50;
-            color: rgb(194, 0, 0);
+            color: rgb(255, 255, 255);
             font-size: medium;
         }
         button {
@@ -34,7 +34,8 @@ nav {
 }
 
 body {
-    margin-top: 50px;
+    margin-top: 120px;
+    font-family: 'Orbitron';
 }
 
 .pc-menu {
@@ -49,8 +50,7 @@ body {
     }
     a {
         display: none;
-        padding: 0px 60px s0px 0px !important;
-
+        padding: 0px 0px 0px 20px !important;
     }
     a:hover {
         background: white !important;
@@ -59,6 +59,7 @@ body {
             color: black;
         }
     }
+
 }
 
 .icon-bar {
@@ -90,9 +91,9 @@ body {
     left: 10px;
 }
 
-.inner_header{
-    width: 900px;
-    height: 100px;
+.inner_header {
+    width: 850px;
+    height: 10px;
     display: block;
     margin: 0 auto;
     position: absolute;
@@ -104,8 +105,8 @@ body {
     float: left;
     height: 100%;
     display: table;
-    padding: 20px 30px;
-    padding-left: 20px;
+    padding: 14px 20px;
+    padding-left: 40px;
 }
   
 .navigation a li {
@@ -114,5 +115,5 @@ body {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Orbitron';
-    font-size: 15px;
+    font-size: 17px;
 }

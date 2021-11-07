@@ -4,25 +4,24 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('Orbitron-Regular.ttf');
+    src: url('Orbitron-VariableFont_wght.ttf');
 }
 
 html {
     font-size: 55%;
-    font-family: "Orbitron Regular";
+    font-family: "Orbitron";
 }
 
 body {
     background: &backgroundColor;
     font-size: 10px;
     font-size: 1.4rem;
-    font-family: "Orbitron Regular";
 }
 
 h1 {
-    font-size: 24px;
-    font-size: 2.4rem;
-    font-family: "Orbitron Regular";
+    font-size: 50px;
+    font-size: 3rem;
+    font-family: 'Orbitron';
 }
 
 i {
