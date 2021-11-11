@@ -15,13 +15,18 @@ html {
 body {
     background: &backgroundColor;
     font-size: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-style: bold;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-h1 {
+header {
     font-size: 50px;
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Orbitron';
+    font-weight: 900;
+    font-style: bold;
 }
 
 i {
