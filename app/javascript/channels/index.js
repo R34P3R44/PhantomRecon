@@ -3,3 +3,7 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+import $ from 'jquery';
+window.jQuery = $;
+require('jquery');

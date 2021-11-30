@@ -31,6 +31,9 @@ nav {
         button:hover, .navbar-brand:hover {
             opacity: 0.8;
         }
+        .col-sm-5, .col-sm-7 {
+            padding: 0;
+        }
         
     }
 }
@@ -66,7 +69,6 @@ body {
             color: black;
         }
     }
-
 }
 
 .icon-bar {
@@ -99,20 +101,20 @@ body {
 }
 
 .inner_header {
-    width: 800px;
+    width: 600px;
     height: 100px;
     display: block;
     margin: 0 auto;
     position: absolute;
     top: 0;
-    right: 250px
+    right: 400px
 }
 
 .navigation a {
     float: left;
     height: 100%;
     display: table;
-    padding: 14px 20px;
+    padding: 20px 10px;
     padding-left: 40px;
 }
   
@@ -122,5 +124,21 @@ body {
     display: table-cell;
     vertical-align: middle;
     font-family: 'Orbitron';
-    font-size: 17px;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 2px 6px;
+    font-size: 14.52px;
+    width: 75px;
+    height: 25.97px;
+    padding-bottom: 23px;
+    vertical-align: 0.5px;
+}
+
+a {
+    color: red;
+}
+.col-md-4 {
+    margin-top: 50px;
 }
